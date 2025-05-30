@@ -3,5 +3,6 @@ public class C01 {
         int randomSayi = (int) (Math.random()*80);
         System.out.println("randomSayi = " + randomSayi);
         System.out.println(randomSayi %2 == 0 ? "cift" : "tek");
+        System.out.println("degisiklik");
     }
 }
