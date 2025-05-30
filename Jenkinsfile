@@ -6,9 +6,9 @@ pipeline {
             steps {
                 script {
                     if (isUnix()) {
-                        sh 'javac ./src/C01.java && java -cp ./src C01'
+                        sh 'java ./src/C01.java'
                     } else {
-                        bat 'javac .\\src\\C01.java && java -cp .\\src C01'
+                        bat 'java ./src/C01.java'
                     }
                 }
             }
@@ -18,9 +18,9 @@ pipeline {
             steps {
                 script {
                     if (isUnix()) {
-                        sh 'javac ./src/C02.java && java -cp ./src C02'
+                        sh 'java ./src/C02.java'
                     } else {
-                        bat 'javac .\\src\\C02.java && java -cp .\\src C02'
+                        bat 'java ./src/C02.java'
                     }
                 }
             }
@@ -30,9 +30,9 @@ pipeline {
             steps {
                 script {
                     if (isUnix()) {
-                        sh 'javac ./src/C03.java && java -cp ./src C03'
+                        sh 'java ./src/C03.java'
                     } else {
-                        bat 'javac .\\src\\C03.java && java -cp .\\src C03'
+                        bat 'java ./src/C03.java'
                     }
                 }
             }
